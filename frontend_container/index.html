@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LLM Playground</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>LLM Playground</h1>
+
+    <!-- Prompt Input -->
+    <label for="prompt-input">Enter your prompt:</label>
+    <textarea id="prompt-input" placeholder="Type your prompt here..."></textarea>
+    <button id="submit-btn">Ask LLM</button>
+
+    <!-- LLM Response Output -->
+    <div class="output-section">
+      <h3>LLM Response:</h3>
+      <div id="llm-output" class="output-box"></div>
+    </div>
+
+
+    <!-- Audio Playback -->
+    <div id="response-block" style="margin-top: 20px;">
+      <button id="listen-btn" style="display:none;">🔊 Listen to Response</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

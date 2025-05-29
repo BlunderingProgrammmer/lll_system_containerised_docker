@@ -1,0 +1,39 @@
+version: '3.8'
+services:
+  backend:
+    build:
+      context: ./backend_container
+    container_name: backend
+    ports:
+      - "8000:8000"
+    environment:
+      - ENV=production
+    depends_on:
+      - prompt_voice
+    networks:
+      - app-network
+
+  prompt_voice:
+    build:
+      context: ./prompt_voice_memory
+    container_name: prompt_voice
+    ports:
+      - "8002:8002"
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: ./frontend_container
+    container_name: frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+      - prompt_voice
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
