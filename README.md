@@ -90,8 +90,12 @@ The services communicate over a Docker network defined in `docker-compose.yml`.
   docker-compose logs backend
   docker-compose logs frontend
   docker-compose logs prompt_voice_memory
+  
   ```
+## 🧑‍💻 Author
 
+- Built as part of an AI & Security exploration project.
+- in collabaration with -KEITH- https://github.com/004Keith
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit pull requests.
