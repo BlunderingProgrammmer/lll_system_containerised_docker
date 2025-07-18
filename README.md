@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a multi-container application that integrates a Large Language Model (LLM) backend, a frontend user interface, and a prompt voice memory service. It is designed to provide an interactive playground where users can input prompts, receive generated responses from the LLM backend, and optionally listen to audio responses processed by the voice memory service.
+This project is a multi-container application that integrates a Large Language Model (LLM) backend, a frontend user interface, and a prompt voice memory service. It is designed to provide an interactive playground where users can input prompts, receive generated responses from the LLM backend, and optionally listen to audio responses processed by the voice memory service
 
 ## Architecture
 
